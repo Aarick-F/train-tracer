@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrainTracer</title>
+  <!-- RESET CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- MY STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- JQUERY CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TrainTracer</h1>
+    </header>
+    <section id="display">
+      <h1 class="sectionHead">Current Train Schedule:</h1>
+      <ul class="listRow" id="listHead">
+        <li>Train Name</li>
+        <li>Destination</li>
+        <li>Frequency (min)</li>
+        <li>Next Arrival</li>
+        <li>Minutes Away</li>
+      </ul>
+      <!-- EXAMPLE ENTRY -->
+      <ul class="listRow">
+        <li>Thomas</li>
+        <li>Atlanta</li>
+        <li>45</li>
+        <li>8:00pm</li>
+        <li>65</li>
+      </ul>
+    </section>
+    <section id="newTrain">
+      <h1 class="sectionHead">Add Train</h1>
+      <div id="form">
+        <h1 class="label">Train Name</h1>
+        <input id="trainName" type="text">
+        <h1 class="label">Destination</h1>
+        <input id="trainDestination" type="text">
+        <h1 class="label">First Train Time (Military Time - HH:MM)</h1>
+        <input id="trainTime" type="text">
+        <h1 class="label">Frequency (In Minutes)</h1>
+        <input id="trainFrequency" type="text">
+        <div id="addTrain">
+          <p>Submit</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Coded and Designed by Aarick-F</p>
+    </footer>
+  </div>
+  
+  <!-- MY SCRIPT -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
