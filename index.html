@@ -13,6 +13,8 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <!-- MOMENT.JS -->
+  <script type="text/javascript" src="assets/javascript/moment.js"></script>
   <!-- FIREBASE -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 </head>
@@ -30,14 +32,6 @@
         <li>Next Arrival</li>
         <li>Minutes Away</li>
       </ul>
-      <!-- EXAMPLE ENTRY -->
-      <ul class="listRow">
-        <li>Thomas</li>
-        <li>Atlanta</li>
-        <li>45</li>
-        <li>8:00pm</li>
-        <li>65</li>
-      </ul>
     </section>
     <section id="newTrain">
       <h1 class="sectionHead">Add Train</h1>
@@ -46,7 +40,7 @@
         <input id="trainName" type="text">
         <h1 class="label">Destination</h1>
         <input id="trainDestination" type="text">
-        <h1 class="label">First Train Time (Military Time - HH:MM)</h1>
+        <h1 class="label">First Train Time (Military Time - HHMM)</h1>
         <input id="trainTime" type="text">
         <h1 class="label">Frequency (In Minutes)</h1>
         <input id="trainFrequency" type="text">
